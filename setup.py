@@ -74,7 +74,6 @@ setup(
     packages=find_packages(exclude=["examples", "tests", "tests.*"]),
     package_data={
         '': ["README.rst"],
-        'httprunner': ["templates/*"],
     },
     keywords='MyFab Fabric',
     install_requires=install_requires,

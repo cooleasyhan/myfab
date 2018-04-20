@@ -1,8 +1,3 @@
-# myfab
-
-支持django部署
-```python
-# DEMO fabric file for DJANGO
 import copy
 import os
 
@@ -42,5 +37,3 @@ def ci():
 @hosts(PRODUCTION)
 def restart():
     django.restart(config)
-
-```
