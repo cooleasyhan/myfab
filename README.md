@@ -44,3 +44,28 @@ def restart():
     django.restart(config)
 
 ```
+
+
+```shell
+# fab ci
+[192.168.1.2] Executing task 'ci'
+               PRODUCTION ===>                                       192.168.1.2
+              RUNING_USER ===>                                             nobody
+                  GIT_URL ===>         https://github.com/cooleasyhan/apitest.git
+               GIT_BRANCH ===>                                                dev
+            GIT_BASE_ROOT ===>                                               /u01
+   DJANGO_SETTINGS_MODULE ===>                        djapi_manager.settings_prod
+         IS_INSTALL_MYSQL ===>                                               True
+  IS_UPLOAD_PROD_SETTINGS ===>                                               True
+            GUNICORN_BIND ===>                                       0.0.0.0:8000
+                 APP_NAME ===>                                            apitest
+                ROOT_PATH ===>                                       /u01/apitest
+       PROD_SETTINGS_FILE ===>                   ./djapi_manager/settings_prod.py
+         PROD_TARGET_FILE ===>        /u01/apitest/djapi_manager/settings_prod.py
+       DJANGO_WSGI_MODULE ===>                                 djapi_manager.wsgi
+[192.168.1.2] Login password for 'yihan':
+[192.168.1.2] sudo: mkdir -p /u01
+.
+.
+.
+```
