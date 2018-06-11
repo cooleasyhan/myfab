@@ -98,7 +98,7 @@ def prepare(working_path, user='nobody'):
 
 def createsuperuser(username='admin', user='nobody'):
     sudo('pipenv run python manage.py createsuperuser --username %s ' %
-         admin_user, user=user)
+         username, user=user)
 
 
 def _get_app_name(git_url):
